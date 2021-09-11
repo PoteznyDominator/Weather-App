@@ -4,10 +4,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <title>Weather App</title>
 </head>
 <body>
-  
+  <nav>
+    <div class="search-container">
+      <button class="search"><i class="fas fa-search"></i></button>
+      <input type="text" class="city-input" placeholder="Search for location">
+    </div>
+  </nav>
+  <main>
+    <div class="hour-date-container">
+      <h1 class="hour"></h1>
+      <p class="date"></p>
+    </div>
+    <div class="location-degrees-container">
+      <h1 class="degrees"></h1>
+      <p class="location"></p>
+    </div>
+  </main>
+  <div class="weather-container">
+
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
