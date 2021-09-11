@@ -8,9 +8,9 @@ body{
   overflow: hidden;
   font-family: 'Ubuntu', sans-serif;
 }
-/* :root{
-
-} */
+:root{
+  --text-color: rgb(255, 255, 255);
+}
 nav{
   display: flex;
   justify-content: center;
@@ -42,4 +42,85 @@ nav{
   border: none;
   outline: none;
   cursor: pointer;
+}
+main{
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0 0 0;
+}
+.date-desc-container{
+  color: var(--text-color);
+}
+.date{
+  font-size: 40px;
+  font-weight: 300;
+}
+.desc{
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.location-degrees-container {
+  color: var(--text-color);
+}
+.degrees{
+  font-size: 100px;
+}
+.location{
+  font-size: 20px;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 10px 0 0 0;
+  width: 56px;
+  height: 31px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--text-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "\00B0 C";
+  padding: 3px;
+  height: 17px;
+  width: 17px;
+  left: 4px;
+  bottom: 4px;
+  font-weight: bold;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  content: "\00B0 F";
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
 }
